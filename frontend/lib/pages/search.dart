@@ -9,4 +9,4 @@ class SearchScreen extends StatelessWidget {
       child: Text('Search Screen'),
     );
   }
-}
+}//end this

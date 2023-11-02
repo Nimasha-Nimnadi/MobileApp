@@ -1,7 +1,10 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:frontend/home.dart';
-// import 'package:frontend/home.dart';
+import 'package:frontend/pages/home.dart';
+
+
+
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -158,3 +161,4 @@ Widget inputFile({label, obscureText = false}) {
     ],
   );
 }
+

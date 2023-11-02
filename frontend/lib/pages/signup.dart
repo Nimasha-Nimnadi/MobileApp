@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:frontend/login.dart';
+import 'package:frontend/pages/login.dart';
 // import 'package:http/http.dart as http';
 
 class SignupPage extends StatelessWidget {

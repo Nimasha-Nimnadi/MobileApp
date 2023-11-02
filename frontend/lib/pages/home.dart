@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/detail.dart';
-import 'package:frontend/profile.dart';
-import 'package:frontend/search.dart';
+import 'package:frontend/pages/detail.dart';
+import 'package:frontend/pages/profile.dart';
+import 'package:frontend/pages/search.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:camera/camera.dart';
 import 'package:image_picker/image_picker.dart';
