@@ -1,14 +1,9 @@
 const mongoose = require("mongoose");
 
-const connection = mongoose
-  .createConnection(
-    `mongodb+srv://ishansenanayaka1:8Vy*WcU39MR_Z#f@cluster0.uyiz7le.mongodb.net/`
-  )
-  .on("open", () => {
+const connection =mongoose.createConnection("mongodb://127.0.0.1:27017/SkinScaner").on('open',()=>{
     console.log("MongoDB Connected");
-  })
-  .on("error", () => {
-    console.log("MongoDB Connection error");
-  });
+}).on('error',()=>{
+    console.log("Connection Error...!");
+});
 
 module.exports = connection;

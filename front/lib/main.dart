@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
+
 import 'package:frontend/login.dart';
 import 'package:frontend/signup.dart';
 
-void main() {
+void main() async {
   runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: HomePage(),
+    home: HomePage(
+      token: null,
+    ),
   ));
 }
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  const HomePage({super.key, required token});
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: const Color.fromARGB(255, 38, 62, 117),
       body: SafeArea(
         child: Container(
@@ -61,10 +64,8 @@ class HomePage extends StatelessWidget {
                     minWidth: double.infinity,
                     height: 60,
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const LoginPage()));
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => const LoginPage()));
                     },
                     // defining the shape
                     color: const Color(0xff0095FF),
